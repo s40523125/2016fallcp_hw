@@ -259,9 +259,6 @@ init_mathjax();
                         <li >
                             <a href="../category/course.html">Course</a>
                         </li>
-                        <li >
-                            <a href="../category/misc.html">Misc</a>
-                        </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><span>
@@ -283,8 +280,36 @@ init_mathjax();
 
             <article>
                 <h2><a href="../w10-brython-hui-tu-fan-li.html">W10 Brython 繪圖範例</a></h2>
-                <div class="summary"><p>Brython 繪圖</p>
+                <div class="summary"><p>繪圖流程, 導入程式庫, 啟動, 然後引用各種模組開始繪圖</p>
 
+<!-- 導入 Brython 標準程式庫 -->
+
+<script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js">
+</script>
+
+<!-- 啟動 Brython -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下實際利用  Brython 畫兩條直線 -->
+
+<canvas id="guitarchord" width="600" height="200"></canvas>
+
+<script type="text/python3">
+from browser import document as doc
+import math
+
+canvas = doc["guitarchord"]
+ctx = canvas.getContext("2d")
+ctx.beginPath()
+ctx.lineWidth = 1
+inc = 10
+for i in ...</script></!--></!--></!-->
                     <a class="btn btn-default btn-xs" href="../w10-brython-hui-tu-fan-li.html">more ...</a>
                 </div>
             </article>
@@ -312,11 +337,6 @@ init_mathjax();
                     <li class="list-group-item">
                         <a href="../category/course.html">
                             <i class="fa fa-folder-open fa-lg"></i> Course
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="../category/misc.html">
-                            <i class="fa fa-folder-open fa-lg"></i> Misc
                         </a>
                     </li>
                 </ul>

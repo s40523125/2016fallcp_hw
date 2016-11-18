@@ -259,9 +259,6 @@ init_mathjax();
                         <li class="active">
                             <a href="../category/course.html">Course</a>
                         </li>
-                        <li >
-                            <a href="../category/misc.html">Misc</a>
-                        </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><span>
@@ -283,17 +280,37 @@ init_mathjax();
 
             <article>
                 <h2><a href="../w10-brython-hui-tu-fan-li.html">W10 Brython 繪圖範例</a></h2>
-                <div class="summary"><p>Brython 繪圖</p>
+                <div class="summary"><p>繪圖流程, 導入程式庫, 啟動, 然後引用各種模組開始繪圖</p>
 
+<!-- 導入 Brython 標準程式庫 -->
+
+<script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js">
+</script>
+
+<!-- 啟動 Brython -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下實際利用  Brython 畫兩條直線 -->
+
+<canvas id="guitarchord" width="600" height="200"></canvas>
+
+<script type="text/python3">
+from browser import document as doc
+import math
+
+canvas = doc["guitarchord"]
+ctx = canvas.getContext("2d")
+ctx.beginPath()
+ctx.lineWidth = 1
+inc = 10
+for i in ...</script></!--></!--></!-->
                     <a class="btn btn-default btn-xs" href="../w10-brython-hui-tu-fan-li.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="../2016fall-cp-xue-yuan-lian-jie.html">2016Fall CP 學員連結</a></h2>
-                <div class="summary"><p>利用計算機程式兩班選課名單可以產生個別成員的倉儲、筆記、投影片與網誌.</p>
-
-                    <a class="btn btn-default btn-xs" href="../2016fall-cp-xue-yuan-lian-jie.html">more ...</a>
                 </div>
             </article>
             <hr/>
@@ -312,11 +329,6 @@ init_mathjax();
                             W10 Brython 繪圖範例
                         </a>
                     </li>
-                    <li class="list-group-item">
-                        <a href="../2016fall-cp-xue-yuan-lian-jie.html">
-                            2016Fall CP 學員連結
-                        </a>
-                    </li>
                 </ul>
             </li>
 
@@ -325,11 +337,6 @@ init_mathjax();
                     <li class="list-group-item">
                         <a href="../category/course.html">
                             <i class="fa fa-folder-open fa-lg"></i> Course
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="../category/misc.html">
-                            <i class="fa fa-folder-open fa-lg"></i> Misc
                         </a>
                     </li>
                 </ul>

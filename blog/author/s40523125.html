@@ -2,7 +2,7 @@
 <html lang="en"
 >
 <head>
-    <title>協同設計 - 2016Fall 計算機程式課程網誌 (虎尾科大MDE)</title>
+    <title>Articles by s40523125 - 2016Fall 計算機程式課程網誌 (虎尾科大MDE)</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -167,8 +167,7 @@ init_mathjax();
 </script>
 
 
-    <meta name="author" content="KMOL" />
-    <meta name="keywords" content="協同設計" />
+        <meta name="author" content="KMOL" />
 
     <!-- Open Graph tags -->
         <meta property="og:site_name" content="2016Fall 計算機程式課程網誌 (虎尾科大MDE)" />
@@ -259,9 +258,6 @@ init_mathjax();
                         <li >
                             <a href="../category/course.html">Course</a>
                         </li>
-                        <li >
-                            <a href="../category/misc.html">Misc</a>
-                        </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><span>
@@ -282,10 +278,38 @@ init_mathjax();
         <div class="col-sm-9">
 
             <article>
-                <h2><a href="../2016fall-ji-jie-she-ji-zhu-ti-jiao-xue.html">2016Fall 機械設計主題教學</a></h2>
-                <div class="summary"><p>知識管理與最佳化應用實驗室試圖利用計算機程式、網際內容管理、電腦輔助設計實習與協同產品設計實習等課程, 進行與機械設計相關的主題式教學, 其中包含強化創造力的教學、令學員熟習六種工程表達方式, 並且俱備融入協同設計所需要的四大面向知識與技能.</p>
+                <h2><a href="../w10-brython-hui-tu-fan-li.html">W10 Brython 繪圖範例</a></h2>
+                <div class="summary"><p>繪圖流程, 導入程式庫, 啟動, 然後引用各種模組開始繪圖</p>
 
-                    <a class="btn btn-default btn-xs" href="../2016fall-ji-jie-she-ji-zhu-ti-jiao-xue.html">more ...</a>
+<!-- 導入 Brython 標準程式庫 -->
+
+<script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js">
+</script>
+
+<!-- 啟動 Brython -->
+
+<script>
+window.onload=function(){
+brython(1);
+}
+</script>
+
+<!-- 以下實際利用  Brython 畫兩條直線 -->
+
+<canvas id="guitarchord" width="600" height="200"></canvas>
+
+<script type="text/python3">
+from browser import document as doc
+import math
+
+canvas = doc["guitarchord"]
+ctx = canvas.getContext("2d")
+ctx.beginPath()
+ctx.lineWidth = 1
+inc = 10
+for i in ...</script></!--></!--></!-->
+                    <a class="btn btn-default btn-xs" href="../w10-brython-hui-tu-fan-li.html">more ...</a>
                 </div>
             </article>
             <hr/>
@@ -300,8 +324,8 @@ init_mathjax();
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
-                        <a href="../2016fall-ji-jie-she-ji-zhu-ti-jiao-xue.html">
-                            2016Fall 機械設計主題教學
+                        <a href="../w10-brython-hui-tu-fan-li.html">
+                            W10 Brython 繪圖範例
                         </a>
                     </li>
                 </ul>
@@ -312,11 +336,6 @@ init_mathjax();
                     <li class="list-group-item">
                         <a href="../category/course.html">
                             <i class="fa fa-folder-open fa-lg"></i> Course
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="../category/misc.html">
-                            <i class="fa fa-folder-open fa-lg"></i> Misc
                         </a>
                     </li>
                 </ul>
