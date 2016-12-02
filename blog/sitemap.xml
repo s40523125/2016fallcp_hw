@@ -5,63 +5,63 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>./</loc>
-<lastmod>2016-11-18T15:24:01-00:00</lastmod>
+<lastmod>2016-12-02T15:49:23-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./archives.html</loc>
-<lastmod>2016-11-18T15:24:01-00:00</lastmod>
+<lastmod>2016-12-02T15:49:23-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tags.html</loc>
-<lastmod>2016-11-18T15:24:01-00:00</lastmod>
+<lastmod>2016-12-02T15:49:23-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./categories.html</loc>
-<lastmod>2016-11-18T15:24:01-00:00</lastmod>
+<lastmod>2016-12-02T15:49:23-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./pages/about/</loc>
-<lastmod>2016-11-18T13:45:38+08:00</lastmod>
+<lastmod>2016-12-02T13:55:26+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./w10-brython-hui-tu-fan-li.html</loc>
-<lastmod>2016-11-18T14:00:00+08:00</lastmod>
+<loc>./w12-brython-hui-tu-lian-xi.html</loc>
+<lastmod>2016-12-02T14:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./category/course.html</loc>
-<lastmod>2016-11-18T14:00:00+08:06</lastmod>
+<lastmod>2016-12-02T14:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./tag/brython.html</loc>
-<lastmod>2016-11-18T14:00:00+08:06</lastmod>
+<lastmod>2016-12-02T14:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>./author/s40523125.html</loc>
-<lastmod>2016-11-18T14:00:00+08:06</lastmod>
+<lastmod>2016-12-02T14:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
