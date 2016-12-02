@@ -1,7 +1,7 @@
-# 2016fllcp
+# 2016fllcp_hw
 
-虎尾科技大學機械設計工程系 2016 FALL 計算機程式課程倉儲
+虎尾科技大學機械設計工程系計算機程式課程倉儲/2016
 
-http://mdecourse.github.io/2016fallcp
+http://s40523125.github.io/2016fallcp_hw
 
-http://mdecourse.github.io/2016fallcp/blog
+http://s40523125.github.io/2016fallcp_hwp/blog
