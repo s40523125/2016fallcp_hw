@@ -4,4 +4,4 @@
 
 http://s40523125.github.io/2016fallcp_hw
 
-http://s40523125.github.io/2016fallcp_hwp/blog
+http://s40523125.github.io/2016fallcp_hw/blog
