@@ -14,7 +14,7 @@
 <v t="leo.20151212173315.3"><vh>@string initial_split_orientation = horizontal</vh></v>
 </v>
 <v t="amd.20160921213353.1"><vh>2016fall 簡報與網誌樣板系統</vh></v>
-<v t="amd.20160106095324.1" a="E"><vh>@path ./../</vh>
+<v t="amd.20160106095324.1" a="E"><vh>@path </vh>
 <v t="leo.20151213173830.1" a="E"><vh>假如要在近端檢視, 使用下列按鈕</vh>
 <v t="leo.20151213085727.1"><vh>@button pelican-blog</vh></v>
 </v>
@@ -161,15 +161,16 @@
 </v>
 <v t="amd.20151215170350.1"><vh>以下為 content 目錄中的 md 檔案</vh></v>
 <v t="amd.20151216001126.1"><vh>md 檔案範例</vh></v>
-<v t="amd.20151215170031.1" a="E"><vh>@path ./../content</vh>
-<v t="amd.20160106093454.1" a="E"><vh>yen 所寫的網誌文章</vh>
+<v t="amd.20151215170031.1" a="E"><vh>@path content</vh>
+<v t="amd.20160106093454.1" a="E"><vh>40523125 的網誌文章</vh>
 <v t="amd.20160727114506.1" a="E"><vh>201612</vh>
 <v t="leo.20161114144444.1"><vh>@edit 20161202.md</vh></v>
 <v t="leo.20161209153346.1"><vh>@edit 20161209.md</vh></v>
+<v t="leo.20161216143555.1"><vh>@edit 20161216.md</vh></v>
 </v>
 </v>
 </v>
-<v t="amd.20160106094754.1" a="E"><vh>@path ./../content/pages</vh>
+<v t="amd.20160106094754.1"><vh>@path content/pages</vh>
 <v t="amd.20160106094829.1" a="E"><vh>yen 所寫的 pages 文章</vh>
 <v t="amd.20160106094844.1"><vh>@edit pages_1.md</vh></v>
 </v>
@@ -178,11 +179,11 @@
 <v t="yen.20161022111056.1"><vh>@button https server</vh></v>
 <v t="leo.20161209154815.1"><vh>@button ipv6 https server</vh></v>
 <v t="yen.20161022151749.1"><vh>產生 .key 與 .crt</vh></v>
-<v t="yen.20161105200127.1" a="E"><vh>選課人員名單</vh>
+<v t="yen.20161105200127.1"><vh>選課人員名單</vh>
 <v t="yen.20161105200140.1"><vh>@edit a.txt</vh></v>
 <v t="yen.20161105200241.1"><vh>@edit b.txt</vh></v>
 </v>
-<v t="yen.20161105200145.1" a="E"><vh>分組名單</vh>
+<v t="yen.20161105200145.1"><vh>分組名單</vh>
 <v t="yen.20161105200154.1"><vh>@edit agroup.txt</vh></v>
 <v t="yen.20161105200234.1"><vh>@edit bgroup.txt</vh></v>
 </v>
@@ -195,10 +196,10 @@
 <t tx="amd.20151215180106.1"></t>
 <t tx="amd.20151216001126.1">@language md
 Title: 文章標題 (請注意各文章的標題不可相同, 比較保險的作法是冠上四個學號尾碼)
-Date: 2016-09-2 12:00
+Date: 2016-09-02 12:00
 Category: 類別
 Tags: 標籤
-Author: yen
+Author: 學號
 
 這裡放入文章摘要
 
@@ -482,6 +483,78 @@ PLUGINS = ['liquid_tags.notebook', 'summary']
 <t tx="leo.20151213230957.1"># 設定網誌以 md 檔案建立的 file system date 為準, 無需自行設定
 
 DEFAULT_DATE = 'fs'</t>
+<t tx="leo.20161209153346.1">@language md
+Title: W13 Brython 練習
+Date: 2016-12-09 14:00
+Category: Course
+Tags: Brython
+Author: s40523125
+
+&lt;!-- 導入 Brython 標準程式庫 --&gt;
+
+&lt;script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
+&lt;/script&gt;
+
+&lt;!-- 啟動 Brython --&gt;
+
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+
+
+&lt;script type="text/python3"&gt;
+from browser import document
+from browser import alert
+ 
+def get_input(ev):
+    the_input= input("輸入啦")
+    alert("輸入為:"+str(the_input))
+ 
+document['ch01'].bind('click',get_input)
+&lt;/script&gt;
+&lt;button id="ch01"&gt;取輸入後再列印出來&lt;/button&gt;
+
+
+
+&lt;div id="container"&gt;&lt;/div&gt;
+&lt;script type="text/python3"&gt;
+from browser import document as doc
+from browser import html
+container = doc['container']
+def numPrint(ev):
+    mystring = ""
+    num = input("請輸入重複執行次數:")
+    #for i in range(1, 11):
+    for i in range(1, int(num)+1):
+        mystring += str(i) + ": hello mde" + html.BR()
+    container &lt;= mystring
+ 
+doc['w13'].bind('click',numPrint)
+&lt;/script&gt;
+&lt;button id="w13"&gt;取重複執行次數後再列印出來&lt;/button&gt;
+
+
+
+&lt;div id="temperature"&gt;&lt;/div&gt;
+&lt;script type="text/python3"&gt;
+from browser import document as doc
+from browser import html
+container = doc['temperature']
+def convTemp(event):
+    mystring = ""
+    cdegree = input("請輸入攝氏溫度:")
+    fdegree = float(cdegree)*9/5 + 32
+    output_string = "攝氏 " + str(cdegree) + "度=華氏 " + str(fdegree) + "度" + html.BR()
+    container &lt;= output_string
+ 
+doc['w13-1'].bind('click',convTemp)
+&lt;/script&gt;
+&lt;button id="w13-1"&gt;取攝氏溫度再轉為華氏溫度&lt;/button&gt;
+</t>
 <t tx="leo.20161209154815.1">@language python
 import os
 import subprocess
@@ -510,6 +583,12 @@ def domake():
 # 利用執行緒執行 https 伺服器
 make = threading.Thread(target=domake)
 make.start()</t>
+<t tx="leo.20161216143555.1">@language md
+Title: W14 Brython 練習
+Date: 2016-12-16 14:00
+Category: Course
+Tags: Brython
+Author: s40523125</t>
 <t tx="yen.20161011114704.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
