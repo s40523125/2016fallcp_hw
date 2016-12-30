@@ -164,9 +164,9 @@
 <v t="amd.20151215170031.1" a="E"><vh>@path content</vh>
 <v t="amd.20160106093454.1" a="E"><vh>40523125 的網誌文章</vh>
 <v t="amd.20160727114506.1" a="E"><vh>201612</vh>
-<v t="leo.20161114144444.1"><vh>@edit 20161202.md</vh></v>
 <v t="leo.20161209153346.1"><vh>@edit 20161209.md</vh></v>
 <v t="leo.20161216143555.1"><vh>@edit 20161216.md</vh></v>
+<v t="leo.20161230133247.1"><vh>@edit 20161230.md</vh></v>
 </v>
 </v>
 </v>
@@ -483,78 +483,6 @@ PLUGINS = ['liquid_tags.notebook', 'summary']
 <t tx="leo.20151213230957.1"># 設定網誌以 md 檔案建立的 file system date 為準, 無需自行設定
 
 DEFAULT_DATE = 'fs'</t>
-<t tx="leo.20161209153346.1">@language md
-Title: W13 Brython 練習
-Date: 2016-12-09 14:00
-Category: Course
-Tags: Brython
-Author: s40523125
-
-&lt;!-- 導入 Brython 標準程式庫 --&gt;
-
-&lt;script type="text/javascript" 
-    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
-&lt;/script&gt;
-
-&lt;!-- 啟動 Brython --&gt;
-
-&lt;script&gt;
-window.onload=function(){
-brython(1);
-}
-&lt;/script&gt;
-
-
-
-&lt;script type="text/python3"&gt;
-from browser import document
-from browser import alert
- 
-def get_input(ev):
-    the_input= input("輸入啦")
-    alert("輸入為:"+str(the_input))
- 
-document['ch01'].bind('click',get_input)
-&lt;/script&gt;
-&lt;button id="ch01"&gt;取輸入後再列印出來&lt;/button&gt;
-
-
-
-&lt;div id="container"&gt;&lt;/div&gt;
-&lt;script type="text/python3"&gt;
-from browser import document as doc
-from browser import html
-container = doc['container']
-def numPrint(ev):
-    mystring = ""
-    num = input("請輸入重複執行次數:")
-    #for i in range(1, 11):
-    for i in range(1, int(num)+1):
-        mystring += str(i) + ": hello mde" + html.BR()
-    container &lt;= mystring
- 
-doc['w13'].bind('click',numPrint)
-&lt;/script&gt;
-&lt;button id="w13"&gt;取重複執行次數後再列印出來&lt;/button&gt;
-
-
-
-&lt;div id="temperature"&gt;&lt;/div&gt;
-&lt;script type="text/python3"&gt;
-from browser import document as doc
-from browser import html
-container = doc['temperature']
-def convTemp(event):
-    mystring = ""
-    cdegree = input("請輸入攝氏溫度:")
-    fdegree = float(cdegree)*9/5 + 32
-    output_string = "攝氏 " + str(cdegree) + "度=華氏 " + str(fdegree) + "度" + html.BR()
-    container &lt;= output_string
- 
-doc['w13-1'].bind('click',convTemp)
-&lt;/script&gt;
-&lt;button id="w13-1"&gt;取攝氏溫度再轉為華氏溫度&lt;/button&gt;
-</t>
 <t tx="leo.20161209154815.1">@language python
 import os
 import subprocess
@@ -583,12 +511,53 @@ def domake():
 # 利用執行緒執行 https 伺服器
 make = threading.Thread(target=domake)
 make.start()</t>
-<t tx="leo.20161216143555.1">@language md
-Title: W14 Brython 練習
-Date: 2016-12-16 14:00
+<t tx="leo.20161230133247.1">@language md
+Title: 新年快樂
+Date: 2016-12-30 14:00
 Category: Course
 Tags: Brython
-Author: s40523125</t>
+Author: s40523125
+
+2017年元旦快樂
+
+&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;!-- 導入 Brython 標準程式庫 --&gt;
+&lt;script type="text/javascript" 
+    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js"&gt;
+&lt;/script&gt;
+
+&lt;!-- 啟動 Brython --&gt;
+&lt;script&gt;
+window.onload=function(){
+brython(1);
+}
+&lt;/script&gt;
+
+&lt;!-- 以下可以執行  Brython 程式 --&gt;
+&lt;div id="newyear"&gt;&lt;/div&gt;
+&lt;script type="text/python3"&gt;
+from browser import document 
+from browser import html
+import random
+num = random.randint(1,100)
+#設法將num列印在網頁上
+print_location = document["newyear"]
+
+def gen_int():
+    num = random.sample(list(range(1,50)),6)
+    range(6):
+    print_location &lt;= num_list[i] + html.BR()
+    
+def lottery(e):
+    for i in range(6):
+        gen_int()
+    print_location &lt;= "恭喜中獎" + html.BR()
+    
+document["but1"].bind("click",gen_int)
+&lt;/script&gt;
+&lt;button id="but1"&gt;產生整數亂數&lt;/button&gt;
+</t>
 <t tx="yen.20161011114704.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 @others
