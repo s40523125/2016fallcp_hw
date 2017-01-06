@@ -162,7 +162,7 @@
 <v t="amd.20151215170350.1"><vh>以下為 content 目錄中的 md 檔案</vh></v>
 <v t="amd.20151216001126.1"><vh>md 檔案範例</vh></v>
 <v t="amd.20151215170031.1" a="E"><vh>@path ./../content</vh>
-<v t="amd.20160106093454.1" a="E"><vh>yen 所寫的網誌文章</vh>
+<v t="amd.20160106093454.1" a="E"><vh>Eazel 所寫的網誌文章</vh>
 <v t="amd.20160727114506.1" a="E"><vh>201609</vh>
 <v t="leo.20161114144444.1"><vh>@edit 20161125.md</vh></v>
 <v t="leo.20161202150001.1"><vh>@edit 20161202.md</vh></v>
@@ -193,12 +193,6 @@
 <v t="leo.20161202145956.3"><vh>Recovered node "封面投影片內容" from @clean index.html</vh>
 <v t="leo.20161202145956.4"><vh>old:封面投影片內容</vh></v>
 <v t="leo.20161202145956.5"><vh>new:封面投影片內容</vh></v>
-</v>
-</v>
-<v t="leo.20170106140905.2" a="E"><vh>Recovered Nodes</vh>
-<v t="leo.20170106140905.3"><vh>Recovered node "封面投影片內容" from @clean index.html</vh>
-<v t="leo.20170106140905.4"><vh>old:封面投影片內容</vh></v>
-<v t="leo.20170106140905.5"><vh>new:封面投影片內容</vh></v>
 </v>
 </v>
 </vnodes>
@@ -524,43 +518,6 @@ Created by [KMOLab](http://chiamingyen.github.io/kmolab/blog/)
 
 </t>
 <t tx="leo.20161202145956.5"># 張皓然的計算機程式課程
-
-### 虎科大機械設計工程系
-
-&lt;small&gt;
-Created by [KMOLab](http://chiamingyen.github.io/kmolab/blog/)
-&lt;/small&gt;
-
-[blog](blog/index.html)
-
-</t>
-<t tx="leo.20170106140905.2"></t>
-<t tx="leo.20170106140905.3">(uncached) amd.20161004095719.2
-Diff...
-- # 2016Fall 計算機程式課程
-+ # 張皓然的計算機程式課程
-  
-  ### 虎科大機械設計工程系
-  
-  &lt;small&gt;
-  Created by [KMOLab](http://chiamingyen.github.io/kmolab/blog/)
-  &lt;/small&gt;
-  
-  [blog](blog/index.html)
-  
-</t>
-<t tx="leo.20170106140905.4"># 張皓然的計算機程式課程
-
-### 虎科大機械設計工程系
-
-&lt;small&gt;
-Created by [KMOLab](http://chiamingyen.github.io/kmolab/blog/)
-&lt;/small&gt;
-
-[blog](blog/index.html)
-
-</t>
-<t tx="leo.20170106140905.5"># 2016Fall 計算機程式課程
 
 ### 虎科大機械設計工程系
 

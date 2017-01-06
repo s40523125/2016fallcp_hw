@@ -348,7 +348,7 @@ def gen_int():
 def lottery(e):
     for i in range(6):
         gen_int()
-    print_location <= "恭喜中獎!但會重複喔~" + html.BR()
+    print_location <= "恭喜中獎" + html.BR()
 
 #document["but1"].bind("click", gen_int)
 document["but1"].bind("click", lottery)
@@ -372,7 +372,7 @@ def gen_int():
 def lottery(e):
     for i in range(6):
         gen_int()
-    print_location <= "恭喜中獎!但會重複喔~" + html.BR()
+    print_location <= "恭喜中獎" + html.BR()
 
 #document["but1"].bind("click", gen_int)
 document["but1"].bind("click", lottery)
@@ -380,7 +380,7 @@ document["but1"].bind("click", lottery)
 <button id="but1">產生整數亂數</button>
 </pre>
 
-<p>如何產生出不重複的6個數字</p>
+<p>如何產生出不重複的六個數字</p>
 <script type="text/python3">
 from browser import document
 from browser import html
@@ -391,7 +391,7 @@ def lottery(e):
     num_list = random.sample(list(range(1, 50)), 6)
     for i in range(6):
         print_location <= num_list[i] + html.BR()
-    print_location <= "恭喜中獎!" + html.BR()
+    print_location <= "恭喜中獎" + html.BR()
 
  #random.sample(list(range(1, 50)), 6)-----list <--python 3
 
@@ -410,7 +410,7 @@ def lottery(e):
     num_list = random.sample(list(range(1, 50)), 6)
     for i in range(6):
         print_location <= num_list[i] + html.BR()
-    print_location <= "恭喜中獎!" + html.BR()
+    print_location <= "恭喜中獎" + html.BR()
 
  #random.sample(list(range(1, 50)), 6)-----list <--python 3
 
