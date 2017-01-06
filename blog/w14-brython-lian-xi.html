@@ -341,38 +341,6 @@ document['ch01'].bind('click',get_input)
 </script>
 
 <p><button id="ch01">40523125</button></p>
-<pre class="brush: python">
-
-<!-- PELICAN_END_SUMMARY -->
-
-<!-- 導入 Brython 標準程式庫 -->
-
-<script type="text/javascript" 
-    src="https://cdn.rawgit.com/brython-dev/brython/master/www/src/brython_dist.js">
-</script>
-
-<!-- 啟動 Brython -->
-
-<script>
-window.onload=function(){
-brython(1);
-}
-</script>
-
-<!-- ch01 基本的列印與輸入函式 -->
-
-<script type="text/python3">
-from browser import document
-from browser import alert
-
-def get_input(ev):
-    the_input= input("請輸入")
-    alert("輸入為:"+str(the_input))
-
-document['ch01'].bind('click',get_input)
-</script>
-<button id="ch01">40523125</button>
-</pre>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -387,6 +355,11 @@ document['ch01'].bind('click',get_input)
 
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
+                    <li class="list-group-item">
+                        <a href="./xuan-zhuan-dong-hua.html">
+                            旋轉動畫
+                        </a>
+                    </li>
                     <li class="list-group-item">
                         <a href="./yuan-dan-kuai-le.html">
                             元旦快樂
@@ -405,11 +378,6 @@ document['ch01'].bind('click',get_input)
                     <li class="list-group-item">
                         <a href="./w12-brython-hui-tu-lian-xi.html">
                             W12 Brython 繪圖練習
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="./w13-brython-lian-xi.html">
-                            W13 Brython 練習
                         </a>
                     </li>
                 </ul>
@@ -463,7 +431,7 @@ document['ch01'].bind('click',get_input)
    <div class="container">
       <hr>
       <div class="row">
-         <div class="col-xs-10">&copy; 2016 KMOL
+         <div class="col-xs-10">&copy; 2017 KMOL
             &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
             <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
