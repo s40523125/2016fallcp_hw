@@ -180,10 +180,6 @@
 <v t="yen.20161105200140.1"><vh>@edit a.txt</vh></v>
 <v t="yen.20161105200241.1"><vh>@edit b.txt</vh></v>
 </v>
-<v t="yen.20161105200145.1" a="E"><vh>分組名單</vh>
-<v t="yen.20161105200154.1"><vh>@edit agroup.txt</vh></v>
-<v t="yen.20161105200234.1"><vh>@edit bgroup.txt</vh></v>
-</v>
 <v t="leo.20161202145956.2" a="E"><vh>Recovered Nodes</vh>
 <v t="leo.20161202145956.3"><vh>Recovered node "封面投影片內容" from @clean index.html</vh>
 <v t="leo.20161202145956.4"><vh>old:封面投影片內容</vh></v>
@@ -1098,6 +1094,5 @@ make.start()</t>
 
 </t>
 <t tx="yen.20161105200127.1"></t>
-<t tx="yen.20161105200145.1"></t>
 </tnodes>
 </leo_file>

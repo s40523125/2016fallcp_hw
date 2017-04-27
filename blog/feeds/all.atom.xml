@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 計算機程式課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2017-04-27T12:00:00+08:00</updated><entry><title>Ubuntu16.04系統環境操作</title><link href="./ubuntu1604xi-tong-huan-jing-cao-zuo.html" rel="alternate"></link><published>2017-04-27T12:00:00+08:00</published><updated>2017-04-27T12:00:00+08:00</updated><author><name>EAZEL</name></author><id>tag:,2017-04-27:./ubuntu1604xi-tong-huan-jing-cao-zuo.html</id><summary type="html"></summary><category term="Brython"></category></entry></feed>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2016Fall 計算機程式課程網誌 (虎尾科大MDE)</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2017-04-27T12:00:00+08:00</updated><entry><title>Ubuntu16.04系統環境操作</title><link href="./ubuntu1604xi-tong-huan-jing-cao-zuo.html" rel="alternate"></link><published>2017-04-27T12:00:00+08:00</published><updated>2017-04-27T12:00:00+08:00</updated><author><name>EAZEL</name></author><id>tag:,2017-04-27:./ubuntu1604xi-tong-huan-jing-cao-zuo.html</id><summary type="html">&lt;p&gt;在Ubuntu中安裝Ngixn&lt;/p&gt;
+&lt;p&gt;點擊左方工具列中的system setting，選擇net work後，找到options來更改設定，切換到IPv4的分頁。&lt;/p&gt;
+&lt;p&gt;填入宿舍的網路IP，儲存後完成。&lt;/p&gt;
+&lt;p&gt;打開terminal，輸入sudo apt install nginx ，送出後得再輸入密碼，輸入後開始安裝。 &lt;/p&gt;
+&lt;p&gt;若無錯誤訊息，為安裝成功。&lt;/p&gt;
+&lt;p&gt;接下來啟動Ngixn伺服器，輸入service nginx start啟動伺服。&lt;/p&gt;
+&lt;p&gt;打開瀏覽器，輸入主機ip後，如看見welcome to nginx即完成。&lt;/p&gt;</summary><category term="Brython"></category></entry></feed>
